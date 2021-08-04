@@ -11,6 +11,9 @@ def OurMission():
 def aboutus():
     return render_template("aboutus.html")
 
+@app.route('/fundraising')
+def fundraising():
+    return render_template('fundraising.html')
 
 @app.route('/')
 def home():
