@@ -16,6 +16,10 @@ def fundraising():
 def broadcast():
     return render_template('broadcast.html')
 
+@app.route('/sponsorships')
+def sponsor():
+    return render_template('sponsorships.html')
+
 @app.route('/')
 def home():
     return render_template("home.html")
