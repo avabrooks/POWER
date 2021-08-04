@@ -20,6 +20,10 @@ def broadcast():
 def sponsor():
     return render_template('sponsorships.html')
 
+@app.route('/classes')
+def classes():
+    return render_template('classes.html')
+
 @app.route('/')
 def home():
     return render_template("home.html")
