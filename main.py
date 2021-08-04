@@ -7,13 +7,14 @@ app = Flask(__name__)
 def OurMission():
     return render_template("mission.html")
 
-@app.route('/aboutus')
-def aboutus():
-    return render_template("aboutus.html")
 
 @app.route('/fundraising')
 def fundraising():
     return render_template('fundraising.html')
+
+@app.route('/Broadcast')
+def broadcast():
+    return render_template('broadcast.html')
 
 @app.route('/')
 def home():
